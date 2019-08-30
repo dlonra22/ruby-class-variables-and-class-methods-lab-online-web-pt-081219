@@ -27,7 +27,7 @@ class Song
   def self.artists 
     if @@artists.length > 0 
       unique_artists =[]
-      unique_artists = @@artists.uniq{ |art| gnr}
+      unique_artists = @@artists.uniq{ |art| art}
     end
     unique_artists
   end
