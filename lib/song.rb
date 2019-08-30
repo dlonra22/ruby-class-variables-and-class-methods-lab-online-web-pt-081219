@@ -31,7 +31,7 @@ class Song
         if genre_hash[key]==nil 
           genre_hash[key] = 1
         else 
-          genre_hash[key]+= 1
+          genre_hash[key] += 1
         end
       end
       genre_hash
