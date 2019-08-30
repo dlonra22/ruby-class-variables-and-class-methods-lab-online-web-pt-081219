@@ -19,7 +19,7 @@ class Song
     if @@genres.length > 0 
        buffer = @@genres[0]
        dup_genres =[]
-       @@genres.each_with_index do |gnr, index|
+       @@genres.uniq do |gnr, index|
          gnr = dup_genres[index]
       
     
