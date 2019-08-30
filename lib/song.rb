@@ -17,10 +17,11 @@ class Song
   
   def self.genres 
     if @@genres.length > 0 
-       buffer = @@genres[0]
-       dup_genres =[]
-       @@genres.uniq do |gnr, index|
-         gnr = dup_genres[index]
+      unique_genres =[]
+      unique_genres = @@genres.uniq{ |gnr| gnr}
+    end
+  end
+      
       
     
   
