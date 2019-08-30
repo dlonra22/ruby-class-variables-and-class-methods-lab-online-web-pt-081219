@@ -16,9 +16,10 @@ class Song
   end
   
   def self.genres 
-    if @@count > 0 
-      current = @genre
-      @genre.each do |gnr|
+    if @@genres.length > 0 
+       buffer = @@genres[0]
+       @@genres.each do |gnr|
+         buff
       
     
   
