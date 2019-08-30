@@ -18,8 +18,9 @@ class Song
   def self.genres 
     if @@genres.length > 0 
        buffer = @@genres[0]
-       @@genres.each do |gnr|
-         buff
+       dup_genres =[]
+       @@genres.each_with_index do |gnr, index|
+         gnr = dup_genres[index]
       
     
   
