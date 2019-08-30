@@ -22,6 +22,7 @@ class Song
       unique_genres =[]
       unique_genres = @@genres.uniq{ |gnr| gnr}
     end
+    unique_genres
   end
   
   def self.genre_count
